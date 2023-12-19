@@ -1,0 +1,395 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #010922;
+  --secondary-color: #8080d7;
+  --accent-color: #aad9d9;
+
+  --primary-text-color: #ffffff;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--primary-color);
+  color: var(--primary-text-color);
+}
+
+h1 {
+  font-size: 5.125rem;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 12%;
+  line-height: 27.5px;
+}
+
+p {
+  font-size: 1.125rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: var(--primary-text-color);
+}
+
+ul {
+  list-style: none;
+}
+
+/*Utility Classes*/
+
+.container {
+  max-width: 1180px;
+  margin-inline: auto;
+  overflow: hidden;
+}
+
+.primarybutton {
+  background-color: var(--secondary-color);
+  color: var(--primary-text-color);
+  padding: 12px 36px;
+  border: none;
+  outline: none;
+  border-radius: 60px;
+
+  font-size: 16px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+}
+
+.secondarybutton {
+  background-color: transparent;
+  color: var(--primary-text-color);
+  padding: 12px 36px;
+  border: 1px solid var(--secondary-color);
+  outline: none;
+  border-radius: 60px;
+}
+
+/*Navigation Section*/
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 24px;
+}
+
+.company-logo a {
+  font-weight: 700;
+}
+
+.nav-links ul {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.floatImg1 {
+  position: absolute;
+  z-index: 1;
+  opacity: 0.7;
+}
+
+.floatImg2 {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  opacity: 0.7;
+}
+
+/*Hero Section*/
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-left {
+  width: 40%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.hero-button {
+  display: flex;
+  gap: 30px;
+}
+
+.hero-img img {
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+
+/*Feature On Section*/
+
+.FeatureOn-section {
+  padding: 60px 0;
+}
+
+.featureon-heading {
+  margin-bottom: 20px;
+  color: var(--accent-color);
+}
+
+.featureon-container {
+  position: relative;
+  padding: 20px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: #594fa950;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+/*Big Feature Section*/
+
+.big-feature-container {
+  padding: 64px 0;
+}
+
+.big-feature-innerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  margin-bottom: 120px;
+}
+
+.big-feature-innerContainer:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+.left-bigfeature-section {
+  width: 50%;
+}
+
+.right-bigfeature-section {
+  width: 40%;
+  margin-right: 60px;
+}
+
+.right-bigfeature-section:nth-child(2) {
+  width: 40%;
+  margin-left: 70px;
+}
+
+.big-feature-section-Img img {
+  width: 100%;
+}
+
+.big-feature-section-content {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.big-feature-section-content h3 {
+  color: var(--accent-color);
+}
+
+/*Testimonials Section*/
+
+.Testimonials-section {
+  padding-block: 64px;
+}
+
+.testimonials-container-heading {
+  width: 50%;
+  text-align: center;
+
+  margin: 0 auto 120px;
+}
+
+.testimonials-container-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  flex-wrap: wrap;
+}
+
+.testimonials-item {
+  max-width: 30%;
+  height: 250px;
+  padding: 40px;
+  position: relative;
+
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+
+  text-align: center;
+  gap: 20px;
+
+  background-color: #21204c;
+  border-radius: 10px;
+}
+
+.testimonials-item-img {
+  margin-inline: auto;
+
+  position: absolute;
+  top: -25%;
+  left: 30%;
+}
+
+.testimonials-item-content {
+  margin-top: 52px;
+}
+
+.testimonials-item-content h3 {
+  margin-top: 25px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.testimonials-item-content p {
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 10px;
+}
+
+/*CTA Section*/
+
+.Cta-Section {
+  padding: 90px 0;
+}
+
+.cta-container {
+  background: linear-gradient(132deg, #4444a2, #6da9a9);
+
+  padding: 90px;
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.cta-container h3 {
+  text-transform: uppercase;
+}
+
+.cta-container h2 {
+  text-transform: capitalize;
+  width: 60%;
+  text-align: center;
+}
+
+.cta-button {
+  background-color: #21204c;
+  color: var(--primary-text-color);
+  padding: 18px 64px;
+  border: none;
+  outline: none;
+  border-radius: 60px;
+
+  font-size: 16px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+}
+
+/*Footer Section*/
+
+.footer-section {
+  padding: 90px 0;
+}
+
+.footer-container {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.footer-logo a {
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.footer-col {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-col p {
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.email-submit {
+  position: relative;
+}
+
+.email-submit input {
+  width: 300px;
+  height: 40px;
+  padding: 12px 24px;
+  border-radius: 20px;
+
+  border: none;
+  outline: none;
+
+  background-color: #21204c;
+  margin-top: 40px;
+  color: #ffffff;
+}
+
+.email-submit input::placeholder {
+  color: #ffffff;
+}
+
+.email-submit button {
+  background-color: #000000;
+  color: var(--primary-text-color);
+  padding: 10px 24px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+
+  font-size: 10px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+
+  position: absolute;
+  top: 55%;
+  right: 1%;
+}
